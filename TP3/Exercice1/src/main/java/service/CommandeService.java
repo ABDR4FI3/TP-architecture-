@@ -1,2 +1,4 @@
-package service;public class CommandeService {
+package service;
+
+public class CommandeService {
 }

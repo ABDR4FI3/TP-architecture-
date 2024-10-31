@@ -1,2 +1,4 @@
-package service;public class LigneCommandeService {
+package service;
+
+public class LigneCommandeService {
 }

@@ -18,14 +18,14 @@ public class CompteRestJaxRSAPI {
 
     @Path("/comptes")
     @GET
-    @Produces({"application/json"})
+    @Produces({jakarta.ws.rs.core.MediaType.APPLICATION_XML , jakarta.ws.rs.core.MediaType.APPLICATION_JSON})
     public List<Compte> getComptes() {
         return compteRepository.findAll();
     }
     // READ: Recuperer un compte par son identifiant
     @Path("/comptes/{id}")
     @GET
-    @Produces({"application/json"})
+    @Produces({"application/xml", "application/json"})
     public Compte getCompte(@PathParam("id") Long id) {
         return compteRepository.findById(id).orElse(null);
     }
